@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/title_Bar">
+        <Button android:id="@+id/back" android:background="@drawable/com_navbar_btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBack" style="@style/padingstyle" />
+        <TextView android:id="@+id/titleName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mod_phone" android:layout_centerVertical="true" style="@style/app_title_text" />
+        <Button android:id="@+id/commit" android:background="@drawable/com_narbar_send_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/padingstyle" />
+        <ImageView android:id="@+id/smloading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/com_loding_white_small" android:layout_toRightOf="@+id/titleName" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <View style="@style/divider" />
+        <EditText android:id="@+id/mod_content" android:background="@drawable/com_bg_transparent_bg" android:paddingLeft="16.0dip" android:paddingTop="5.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:hint="@string/mod_synopsis" style="@style/app_content_text" />
+        <View style="@style/divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mun_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/number_picker" android:background="@color/app_white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.wheelview.WheelView android:id="@+id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <com.wheelview.WheelView android:id="@+id/month" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_weight="4.0" />
+                <com.wheelview.WheelView android:id="@+id/day" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_weight="3.0" />
+                <com.wheelview.WheelView android:id="@+id/hours" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_weight="3.0" />
+                <com.wheelview.WheelView android:id="@+id/min" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:layout_weight="3.0" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_marginBottom="23.0dip" style="@style/divider" />
+                <View style="@style/divider" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_width">60.0dip</dimen>
+    <dimen name="head_heigth">60.0dip</dimen>
+    <dimen name="head_width2">48.0dip</dimen>
+    <dimen name="head_heigth2">48.0dip</dimen>
+    <dimen name="starmargain">16.0dip</dimen>
+    <dimen name="textsize">18.0sp</dimen>
+    <dimen name="m_height">44.0dip</dimen>
+</resources>

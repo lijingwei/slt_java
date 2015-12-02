@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/upload_pic_title" style="@style/title_Bar">
+        <Button android:id="@+id/back" android:background="@drawable/com_navbar_btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBack" style="@style/padingstyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addexperience" android:layout_centerVertical="true" style="@style/app_title_text" />
+        <Button android:id="@+id/upload_pic_bt_upload" android:background="@drawable/com_narbar_send_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/padingstyle" />
+        <ImageView android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_loding_white_small" android:layout_toLeftOf="@+id/upload_pic_bt_upload" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/input_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/upload_pic_title">
+        <View android:layout_marginTop="30.0dip" style="@style/divider" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textColor="@color/app_text_second_color" android:id="@+id/kkt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+            <EditText android:id="@+id/theme" android:background="@drawable/com_bg_transparent_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:maxLength="30" android:layout_toRightOf="@+id/kkt1" style="@style/app_content_text" />
+        </RelativeLayout>
+        <View style="@style/divider" />
+        <RelativeLayout android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/app_text_second_color" android:id="@+id/kkt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/desc" android:layout_alignParentLeft="true" style="@style/app_content_text" />
+            <EditText android:gravity="top" android:id="@+id/desc" android:background="@drawable/com_bg_transparent_bg" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:lines="6" android:maxLength="200" android:layout_toRightOf="@+id/kkt2" style="@style/app_content_text" />
+        </RelativeLayout>
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@+id/upload_pic_gv_wall" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="6.0dip" android:verticalSpacing="6.0dip" android:stretchMode="columnWidth" android:columnWidth="90.0dip" android:numColumns="auto_fit" android:layout_below="@+id/input_title" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/app_text_second_color" android:id="@+id/mycommentary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/commentary" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/app_text_second_color" android:id="@+id/commentary_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="(0)" android:layout_toRightOf="@+id/mycommentary" android:layout_centerVertical="true" style="@style/app_content_text" />
+    </RelativeLayout>
+    <View android:layout_marginLeft="16.0dip" style="@style/divider" />
+</LinearLayout>

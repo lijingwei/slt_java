@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="title_Bar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/navbar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">56.0dip</item>
+    </style>
+    <style name="app_title_text">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/app_white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="app_titletip_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ddffffff</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_toRightOf">@id/back</item>
+    </style>
+    <style name="app_titlebtn_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="btn_card">
+        <item name="android:paddingTop">24.0dip</item>
+        <item name="android:layout_height">140.0dip</item>
+    </style>
+    <style name="btn_cardtext">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/app_text_second_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="layout_magin">
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="app_content_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+    <style name="app_titlecontent_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/app_title_textcolor</item>
+    </style>
+    <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">24.0dip</item>
+        <item name="android:progressDrawable">@drawable/layer_list_ratingrar</item>
+        <item name="android:minHeight">12.0dip</item>
+        <item name="android:numStars">5</item>
+    </style>
+    <style name="myRatingBar_big" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">35.0dip</item>
+        <item name="android:progressDrawable">@drawable/layer_list_ratingrar_big</item>
+        <item name="android:minHeight">18.0dip</item>
+        <item name="android:numStars">5</item>
+    </style>
+    <style name="main_container">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/main_top_container</item>
+    </style>
+    <style name="divider">
+        <item name="android:background">@color/app_text_tip_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="divider_green">
+        <item name="android:background">@color/app_title_bg_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+    <style name="divider_v">
+        <item name="android:background">@color/app_text_tip_color</item>
+        <item name="android:layout_width">1.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="submit">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_solidbutton_selector</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">32.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="register_edittext_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:textColorHint">@color/app_hint_color</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="settings_module_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="settings_button_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/com_transparentbutton_selector</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="settings_exit_button_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/item_bg_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="common_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="common_progress_bar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+    </style>
+    <style name="common_progress_bar2" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_bar_style</item>
+    </style>
+    <style name="padingstyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:layout_width">56.0dip</item>
+        <item name="android:layout_height">56.0dip</item>
+    </style>
+    <style name="activity_translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="animActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/mov_up_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/mov_down_anim</item>
+    </style>
+    <style name="activity_style" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/animActivity</item>
+    </style>
+    <style name="freedayStyle">
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <!-- AndroidImageSlider theme start-->
+    <style name="AndroidImageSlider_Corner_Oval_Orange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/indicator_corner_bg</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#f60</item>
+        <item name="unselected_color">#ffffff</item>
+        <item name="selected_width">6dp</item>
+        <item name="selected_height">6dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Attractive_Rect_Blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">rect</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#30CCE5</item>
+        <item name="unselected_color">#333333</item>
+        <item name="selected_width">13dp</item>
+        <item name="selected_height">4dp</item>
+        <item name="unselected_width">13dp</item>
+        <item name="unselected_height">4dp</item>
+    </style>
+
+    <style name="AndroidImageSlider_Magnifier_Oval_Black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">#333333</item>
+        <item name="unselected_color">#33000000</item>
+        <item name="selected_width">8dp</item>
+        <item name="selected_height">8dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+    <!-- AndroidImageSlider theme end-->
+</resources>

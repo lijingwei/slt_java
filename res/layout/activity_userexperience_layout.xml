@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/title_Bar">
+        <Button android:id="@id/back" android:background="@drawable/com_navbar_btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBack" style="@style/padingstyle" />
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/experience" android:layout_centerVertical="true" style="@style/app_title_text" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.paopao.android.lycheepark.listView.MyListView android:id="@id/my_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/com_transparentbutton_selector" android:cacheColorHint="#00000000" />
+    </RelativeLayout>
+</LinearLayout>

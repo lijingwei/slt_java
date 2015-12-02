@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/upload_pic_title"
+        style="@style/title_Bar" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/padingstyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/com_navbar_btn_back_selector"
+            android:onClick="onBack" />
+
+        <TextView
+            style="@style/app_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/about" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="64.0dip"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/app_name"
+                android:textColor="@color/app_text_second_color"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8.0dip"
+                android:text="0.0"
+                android:textColor="@color/app_hint_color"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/protocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32.0dip"
+                android:text="@string/protocalbtn"
+                android:textColor="@color/app_title_bg_color"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="@string/comnyname"
+            android:textColor="@color/app_text_second_color"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

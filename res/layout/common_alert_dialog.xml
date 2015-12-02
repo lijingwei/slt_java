@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/com_bg_transparent_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/com_popwindow_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/app_text_color" android:gravity="left|center" android:id="@+id/common_alert_dialog_title" android:paddingLeft="24.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/tip" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/app_text_color" android:gravity="center_vertical" android:id="@+id/common_alert_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/app_text_color" android:textColorHint="@color/app_hint_color" android:id="@+id/money_text" android:background="@drawable/com_input_gray" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/really_money" android:maxLength="6" android:inputType="numberDecimal" />
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@color/app_text_tip_color" android:layout_height="1.0dip" style="@style/divider_green" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/common_alert_dialog_button" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@drawable/com_textcolor_selector" android:id="@+id/common_alert_dialog_confirm" android:background="@drawable/com_transparentblue_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:background="@color/app_text_tip_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:textSize="16.0sp" android:textColor="@drawable/com_textcolor_selector" android:id="@+id/common_alert_dialog_cancel" android:background="@drawable/com_transparentblue_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/confirm" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/llayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="54.0dip"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/tabbar_home_normal_selector"
+            android:gravity="center"
+            android:paddingTop="6.0dip"
+            android:textSize="11.0sp" 
+            android:textColor="@color/app_title_bg_color"
+           android:text="@string/main_function_btn" />
+
+        <TextView
+            android:layout_width="0.5dip"
+            android:layout_height="23.0dip"
+            android:layout_gravity="center"
+            android:background="#ffeaeaea" />
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/tabbar_job_normal_selector"
+            android:gravity="center"
+            android:paddingTop="6.0dip"
+           android:textSize="11.0sp" 
+            android:textColor="@color/table_textcolor"
+           android:text="@string/credit_job_btn" />
+
+        <TextView
+            android:layout_width="0.5dip"
+            android:layout_height="23.0dip"
+            android:layout_gravity="center"
+            android:background="#ffeaeaea" />
+
+        <TextView
+            android:id="@+id/tv_parttime"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/tabbar_parttime_normal_selector"
+            android:gravity="center"
+            android:paddingTop="6.0dip"
+            android:textSize="11.0sp" 
+            android:textColor="@color/table_textcolor"
+           android:text="@string/prictice_job"/>
+
+        <TextView
+            android:layout_width="0.5dip"
+            android:layout_height="23.0dip"
+            android:layout_gravity="center"
+            android:background="#ffeaeaea" />
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/tabbar_profile_normal_selector"
+            android:gravity="center"
+            android:paddingTop="6.0dip"
+           android:textSize="11.0sp" 
+            android:textColor="@color/table_textcolor"
+           android:text="@string/setting_btn" />
+    </LinearLayout>
+
+</LinearLayout>

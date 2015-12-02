@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/title_Bar">
+        <Button android:id="@+id/back" android:background="@drawable/com_navbar_btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBack" style="@style/padingstyle" />
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback" android:layout_centerVertical="true" style="@style/app_title_text" />
+        <Button android:id="@+id/commit" android:background="@drawable/com_narbar_send_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/padingstyle" />
+        <ImageView android:id="@+id/smloading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/com_loding_white_small" android:layout_toRightOf="@+id/title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:layout_marginTop="60.0dip" style="@style/divider" />
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/kky" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/desc" android:layout_alignParentLeft="true" style="@style/app_content_text" />
+        <EditText android:gravity="top" android:id="@+id/remark" android:background="@drawable/com_bg_transparent_bg" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="6" android:maxLength="200" android:layout_toRightOf="@+id/kky" style="@style/app_content_text" />
+    </RelativeLayout>
+    <View style="@style/divider" />
+</LinearLayout>

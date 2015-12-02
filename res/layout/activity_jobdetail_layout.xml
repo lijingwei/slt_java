@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/titleBg" style="@style/title_Bar">
+        <Button android:id="@+id/back" android:background="@drawable/com_navbar_btn_back_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBack" style="@style/padingstyle" />
+        <TextView android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jobdetail" android:layout_centerVertical="true" style="@style/app_title_text" />
+        <ImageView android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/com_loding_white_small" android:layout_toLeftOf="@+id/title" android:layout_centerVertical="true" />
+        <Button android:id="@+id/expand" android:background="@drawable/com_narbar_more_selector" android:layout_width="45.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" style="@style/padingstyle" />
+        <Button android:id="@+id/save" android:background="@drawable/com_navbar_collect_selector" android:layout_width="45.0dip" android:layout_toLeftOf="@+id/expand" android:layout_centerVertical="true" android:onClick="onClick" style="@style/padingstyle" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bottomBg" android:background="@drawable/tabbar_bg" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:id="@+id/job_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="======" android:layout_alignParentLeft="true" style="@style/app_content_text" />
+        <Button android:textSize="14.0sp" android:textColor="@color/app_white" android:id="@+id/getjob" android:background="@drawable/com_gray_selected" android:clickable="false" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/job_get" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <Button android:textSize="14.0sp" android:textColor="@color/app_white" android:id="@+id/callPhone" android:background="@drawable/com_solidbutton_selector" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/callPhone" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/app_text_second_color" android:id="@+id/job_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="****" android:layout_below="@+id/job_contact" android:layout_centerVertical="true" style="@style/app_content_text" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/bottomBg" android:layout_below="@+id/titleBg">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/app_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="16.0sp" android:id="@+id/job_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="220.0dip" android:text="----" style="@style/app_content_text" />
+                    <TextView android:textSize="17.0sp" android:id="@+id/job_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="---" style="@style/app_content_text" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/app_hint_color" android:layout_gravity="right" android:id="@+id/job_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500m" style="@style/app_content_text" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/app_hint_color" android:id="@+id/publishTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="00:00" android:drawableLeft="@drawable/profile_income_icon_time" android:drawablePadding="8.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <View style="@style/divider" />
+            <RelativeLayout android:id="@+id/check_authentication" android:background="@drawable/com_whitebtn_selector" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:onClick="onClick">
+                <ImageView android:id="@+id/img_r" android:background="@drawable/com_icon_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                    <TextView android:textSize="16.0sp" android:id="@+id/job_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxWidth="220.0dip" android:text="--" android:layout_alignParentLeft="true" style="@style/app_content_text" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@+id/job_company">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/app_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/authentication" android:background="@drawable/com_blue_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_authentication" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/app_white" android:layout_gravity="center_vertical" android:id="@+id/reallocation_authentication" android:background="@drawable/com_yellow_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shidi" />
+                        <TextView android:textSize="12.0sp" android:layout_gravity="center_vertical" android:id="@+id/wagetype" android:background="@drawable/com_icon_alipay" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <View style="@style/divider" />
+            <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textColor="@color/app_text_second_color" android:id="@+id/mypaytype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paytype" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                <TextView android:id="@+id/paytype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="----" android:layout_toRightOf="@+id/mypaytype" android:layout_centerVertical="true" style="@style/app_content_text" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/app_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/paytime_container" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="8.0dip">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/mypaytimetype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paytime" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:id="@+id/paytime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="----" android:singleLine="true" android:layout_toRightOf="@+id/mypaytimetype" android:layout_centerVertical="true" style="@style/app_content_text" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/myjobcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/requestCount" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:id="@+id/job_requestCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="----" android:layout_toRightOf="@+id/myjobcount" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/app_text_second_color" android:id="@+id/limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/limt" android:layout_toRightOf="@+id/job_requestCount" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/myjobtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jobtime" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:id="@+id/job_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="----" android:layout_toRightOf="@+id/myjobtime" android:layout_centerVertical="true" style="@style/app_content_text" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/myjob_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/job_address" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:gravity="center_vertical" android:id="@+id/job_address" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/map_btn" android:layout_toRightOf="@+id/myjob_address" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <Button android:id="@+id/map_btn" android:background="@drawable/com_btn_map_selector" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/inerview_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                        <TextView android:textColor="@color/app_text_second_color" android:id="@+id/inerview1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interview_time" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                        <TextView android:gravity="center_vertical" android:id="@+id/inerview_time" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/inerview1" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                        <TextView android:textColor="@color/app_text_second_color" android:id="@+id/inerview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interview_address" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                        <TextView android:gravity="center_vertical" android:id="@+id/inerview_address" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/inerview2" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/myjobdetailtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jobtime2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:id="@+id/job_detailtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="----" android:layout_toRightOf="@+id/myjobdetailtime" android:layout_centerVertical="true" style="@style/app_content_text" />
+                </RelativeLayout>
+                <View android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" style="@style/divider" />
+                <RelativeLayout android:id="@+id/job_detailshow_container" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/myjobshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/teacherdetail" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/app_content_text" />
+                    <TextView android:id="@+id/job_detailshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="----" android:layout_toRightOf="@+id/myjobshow" android:layout_centerVertical="true" style="@style/app_content_text" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/app_text_second_color" android:id="@+id/myjob_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/job_show" android:layout_alignParentLeft="true" style="@style/app_content_text" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/myjob_show">
+                        <TextView android:id="@+id/job_show" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" style="@style/app_content_text" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/app_title_bg_color" android:layout_gravity="center_horizontal" android:id="@+id/job_exp" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/expend_text" android:drawableRight="@drawable/job_arrow_down" android:drawablePadding="8.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/divider" />
+            <TextView android:textColor="@color/app_text_second_color" android:autoLink="phone" android:id="@+id/text_ttp" android:background="@color/app_white" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/paopao_tips" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
