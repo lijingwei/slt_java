@@ -91,7 +91,7 @@ BaseSliderView.OnSliderClickListener,AMapLocationListener{
 			city.setText(cityName); 
 		}
 		initAd();//加载广告	
-		Log.e("test","loading...");
+		Log.e("test","loading...aaaa");
 		//initMessage();//加载消息
 		initRecommendList();//加载推荐列表
 	}
