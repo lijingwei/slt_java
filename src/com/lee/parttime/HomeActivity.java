@@ -30,6 +30,7 @@ import com.squareup.picasso.Picasso.LoadedFrom;
 
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
+import android.util.Log;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
@@ -90,6 +91,7 @@ BaseSliderView.OnSliderClickListener,AMapLocationListener{
 			city.setText(cityName); 
 		}
 		initAd();//加载广告	
+		Log.e("test","loading...");
 		//initMessage();//加载消息
 		initRecommendList();//加载推荐列表
 	}
