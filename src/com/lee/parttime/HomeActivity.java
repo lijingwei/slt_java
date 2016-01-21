@@ -93,7 +93,7 @@ BaseSliderView.OnSliderClickListener,AMapLocationListener{
 		initAd();//加载广告	
 		Log.e("test","loading...aaaa");
 		//initMessage();//加载消息
-		initRecommendList();//加载推荐列表
+		initRecommendList();//加载推荐列表----
 	}
 
 	private void initRecommendList() {
